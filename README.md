@@ -20,9 +20,9 @@ public class JvmComprehension {
     }
 
     private static void printAll(Object o, int i, Integer ii) {
-        Integer uselessVar = 700;       // 5
-                                        //   allocate memory in heap, add reference to stack,
+        Integer uselessVar = 700;       // 5 allocate memory in heap, add reference to stack,
                                         //   object initialization by reference
+                                        // а может компилятор умный и не создаст ничего...
 System.out.println(o.toString() + i + ii);  // 6
     }
 }
